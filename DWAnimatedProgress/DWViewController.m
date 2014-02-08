@@ -26,15 +26,15 @@
     UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 200, 30)];
     testLabel.text = @"david test";
     [self.view addSubview:testLabel];
-    [self.view setBackgroundColor:[UIColor redColor]];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    //[self simulateProgress];
-    [self.rainbowView setProgress:0.5];
+    [self simulateProgress];
+    //[self.rainbowView setProgress:0.5];
     [self.rainbowView startAnimating];
     
 }
@@ -54,7 +54,7 @@
         
         CGFloat increment = (arc4random() % 5) / 10.0f + 0.1;
         CGFloat progress  = self.rainbowView.progressValue + increment;
-        self.rainbowView.progressValue = progress;
+        [self.rainbowView setProgress:progress];
         if (progress < 1.0) {
             
             [self simulateProgress];
