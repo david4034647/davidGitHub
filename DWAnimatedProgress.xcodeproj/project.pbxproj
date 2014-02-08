@@ -21,6 +21,7 @@
 		1E9A735D18A5D2B500147AA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9A733F18A5D2B400147AA9 /* UIKit.framework */; };
 		1E9A736518A5D2B500147AA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E9A736318A5D2B500147AA9 /* InfoPlist.strings */; };
 		1E9A736718A5D2B500147AA9 /* DWAnimatedProgressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9A736618A5D2B500147AA9 /* DWAnimatedProgressTests.m */; };
+		1E9A737218A5E20400147AA9 /* DWRainbowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9A737118A5E20400147AA9 /* DWRainbowView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		1E9A736218A5D2B500147AA9 /* DWAnimatedProgressTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DWAnimatedProgressTests-Info.plist"; sourceTree = "<group>"; };
 		1E9A736418A5D2B500147AA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E9A736618A5D2B500147AA9 /* DWAnimatedProgressTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWAnimatedProgressTests.m; sourceTree = "<group>"; };
+		1E9A737018A5E20400147AA9 /* DWRainbowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWRainbowView.h; sourceTree = "<group>"; };
+		1E9A737118A5E20400147AA9 /* DWRainbowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWRainbowView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 		1E9A734118A5D2B400147AA9 /* DWAnimatedProgress */ = {
 			isa = PBXGroup;
 			children = (
+				1E9A737018A5E20400147AA9 /* DWRainbowView.h */,
+				1E9A737118A5E20400147AA9 /* DWRainbowView.m */,
 				1E9A734A18A5D2B400147AA9 /* DWAppDelegate.h */,
 				1E9A734B18A5D2B400147AA9 /* DWAppDelegate.m */,
 				1E9A734D18A5D2B400147AA9 /* Main.storyboard */,
@@ -252,6 +257,7 @@
 			files = (
 				1E9A734818A5D2B400147AA9 /* main.m in Sources */,
 				1E9A735218A5D2B400147AA9 /* DWViewController.m in Sources */,
+				1E9A737218A5E20400147AA9 /* DWRainbowView.m in Sources */,
 				1E9A734C18A5D2B400147AA9 /* DWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
