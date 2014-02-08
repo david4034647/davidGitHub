@@ -93,32 +93,6 @@
     [layer addAnimation:animation forKey:@"animateGradient"];
 }
 
-//- (void)performAnimation
-//{
-//    NSLog(@"performAnimation start ...");
-//    // Update the colors on the model layer
-//    CAGradientLayer *layer = (id)[self layer];
-//    NSArray *fromColors = [layer colors];
-//    NSArray *toColors = [self shiftColors:fromColors];
-//    
-//    // Update the colors on the model layer
-//    [layer setColors:toColors];
-//    
-//    // Create an animation to slowly move the gradient left to right
-//    CABasicAnimation *animation = nil;
-//    animation = [CABasicAnimation animationWithKeyPath:@"colors"];
-//    [animation setFromValue:fromColors];
-//    [animation setToValue:toColors];
-//    [animation setDuration:0.08];
-//    [animation setRemovedOnCompletion:YES];
-//    [animation setFillMode:kCAFillModeForwards];
-//    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
-//    [animation setDelegate:self];
-//    
-//    // Add the animation to our layer
-//    [layer addAnimation:animation forKey:@"animateGradient"];
-//}
-
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
     NSLog(@"animationDidStop start ...");
@@ -148,7 +122,7 @@
     if (self.progressValue != value) {
         // Progress values go from 0.0 to 1.0
         self.progressValue = MIN(1.0, fabs(value));
-        [self setNeedsDisplay];
+        [self setNeedsLayout];
     }
 }
 

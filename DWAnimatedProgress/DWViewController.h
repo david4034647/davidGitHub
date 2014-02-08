@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DWRainbowView.h"
 
 @interface DWViewController : UIViewController
 
+@property (nonatomic, retain) DWRainbowView *rainbowView;
 @end
